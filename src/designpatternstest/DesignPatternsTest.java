@@ -17,7 +17,18 @@ public class DesignPatternsTest
      */
     public static void main(String[] args)
     {
-        // TODO code application logic here
+        //Array from type CHaracter Class that have the classes from game
+        Character [] arrayChar = {new Soldier(), new Chirurgien(), new Civil(),
+                                 new Sniper(), new Doctor()};
+       
+       for(Character c : arrayChar)
+       {
+           System.out.println("\nInstance from " + c.getClass().getName());
+           System.out.println("*****************************************");
+           
+           c.battle();
+           c.move();
+       }
     }
     
 }
