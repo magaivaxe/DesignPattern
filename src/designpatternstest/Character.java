@@ -13,8 +13,14 @@ public abstract class Character
 {
     
     //Method to move the character
-    abstract void move();
+    void move()
+    {
+        System.out.println("I move by steps.");
+    }
     //Method to battle
-    abstract void battle();
+    void battle()
+    {
+        System.out.println("I dont't battle me!");
+    }
     
 }

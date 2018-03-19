@@ -9,18 +9,12 @@ package designpatternstest;
  *
  * @author eleves
  */
-public class Doctor extends Character
+public class Sniper extends Character
 {
-
     @Override
     void battle()
     {
-        System.out.println("Knife just!");
-    }
-    
-    public void cure()
-    {
-        System.out.println("I health the wounds!");
+        System.out.println("I use the sniper rifle by scoop!");
     }
     
 }

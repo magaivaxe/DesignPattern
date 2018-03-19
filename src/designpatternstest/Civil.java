@@ -11,17 +11,5 @@ package designpatternstest;
  */
 public class Civil extends Character
 {
-
-    @Override
-    void move()
-    {
-        System.out.println("I move by steps");
-    }
-
-    @Override
-    void battle()
-    {
-        System.out.println("I don't battle me");
-    }
     
 }

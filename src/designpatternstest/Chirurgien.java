@@ -12,18 +12,6 @@ package designpatternstest;
 public class Chirurgien extends Character
 {
 
-    @Override
-    void move()
-    {
-        System.out.println("Knife just!");
-    }
-
-    @Override
-    void battle()
-    {
-        System.out.println("Knife just!");
-    }
-    
     public void cure()
     {
         System.out.println("I do the operations!");

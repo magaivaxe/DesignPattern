@@ -13,12 +13,6 @@ public class Soldier extends Character
 {
 
     @Override
-    void move()
-    {
-        System.out.println("I move by steps");
-    }
-
-    @Override
     void battle()
     {
         System.out.println("Sniper, pistol, knife, shotgun! All that you want");
