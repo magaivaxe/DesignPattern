@@ -14,7 +14,14 @@ public class Sniper extends Character
     @Override
     void battle()
     {
-        System.out.println("I use the sniper rifle by scoop!");
+        if (this.armes.equals("Shotgun"))
+        {
+            System.out.println("Shotgun Attack!");
+        }
+        else
+        {
+            System.out.println("Sniper Rifle Attack");
+        }
     }
     
 }

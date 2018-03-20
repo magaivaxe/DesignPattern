@@ -11,6 +11,8 @@ package designpatternstest;
  */
 public abstract class Character
 {
+    //Fields
+    protected String armes = "", shoes = "", healthPack = "";
     
     //Method to move the character
     void move()
@@ -22,5 +24,22 @@ public abstract class Character
     {
         System.out.println("I dont't battle me!");
     }
-    
+    //Method for don't health
+    void cure()
+    {
+        System.out.println("I don't health.");
+    }
+    //Methods to set the items
+    protected void setArmes(String armes)
+    {
+        this.armes = armes;
+    }
+    protected void setShoes(String shoes)
+    {
+        this.shoes = shoes;
+    }
+    protected void setHealthPack(String healthPack)
+    {
+        this.healthPack = healthPack;
+    }
 }

@@ -20,14 +20,19 @@ public class DesignPatternsTest
         //Array from type CHaracter Class that have the classes from game
         Character [] arrayChar = {new Soldier(), new Chirurgien(), new Civil(),
                                  new Sniper(), new Doctor()};
+        String [] arrayArmes = {"Pistol","Pistol","Knife","Shotgun","Knife"};
        
-       for(Character c : arrayChar)
+       for(int i = 0; i < arrayChar.length; i++)
        {
-           System.out.println("\nInstance from " + c.getClass().getName());
+           System.out.println("\nInstance from " + 
+                   arrayChar.getClass().getName());
            System.out.println("*****************************************");
            
-           c.battle();
-           c.move();
+           arrayChar[i].battle();
+           arrayChar[i].setArmes(arrayArmes[i]);
+           arrayChar[i].battle();
+           arrayChar[i].move();
+           arrayChar[i].cure();
        }
     }
     

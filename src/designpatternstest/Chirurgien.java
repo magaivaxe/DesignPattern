@@ -12,8 +12,16 @@ package designpatternstest;
 public class Chirurgien extends Character
 {
 
+    @Override
     public void cure()
     {
-        System.out.println("I do the operations!");
+        if (this.healthPack.equals("Big pack"))
+        {
+            System.out.println("I could do miracles!!");
+        }
+        else
+        {
+            System.out.println("I could do the operations");
+        }
     }
 }

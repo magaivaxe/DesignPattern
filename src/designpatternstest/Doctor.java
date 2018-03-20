@@ -15,12 +15,28 @@ public class Doctor extends Character
     @Override
     void battle()
     {
-        System.out.println("Knife just!");
+        if (this.armes.equals("Pistol"))
+        {
+            System.out.println("Pistol Attack!");
+        }
+        else
+        {
+            System.out.println("Scalpel Attack!");
+        }
+        
     }
     
+    @Override
     public void cure()
     {
-        System.out.println("I health the wounds!");
+        if (this.healthPack.equals("Little pack"))
+        {
+            System.out.println("I could health your injuries!");
+        }
+        else
+        {
+            System.out.println("I could do the basic... sorry");
+        }
     }
     
 }

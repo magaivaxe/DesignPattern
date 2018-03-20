@@ -11,5 +11,18 @@ package designpatternstest;
  */
 public class Civil extends Character
 {
+
+    @Override
+    void battle()
+    {
+        if (this.armes.equals("Knife"))
+        {
+            System.out.println("Knife Attack!");
+        }
+        else
+        {
+            System.out.println("I don't battle me!");
+        }
+    }
     
 }

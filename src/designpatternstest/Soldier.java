@@ -15,7 +15,19 @@ public class Soldier extends Character
     @Override
     void battle()
     {
-        System.out.println("Sniper, pistol, knife, shotgun! All that you want");
+        if (this.armes.equals("pistol"))
+        {
+            System.out.println("Pistol Attack!");
+        }
+        else if (this.armes.equals("Sniper Rifle"))
+        {
+            System.out.println("Sniper Rifle Attack!");
+        }
+        else
+        {
+            System.out.println("Knife Attack!");
+        }
+        
     }
     
 }
